@@ -21,9 +21,9 @@ for element in range(23, len(all_scores)-4,2):
     #print(all_scores[element].text + ' \n ')
 
 
-y = scores1[0::3]
-x = scores1[1::3]
-z = scores1[2::3]
+home_team = scores1[0::3]
+team_scores = scores1[1::3]
+away_team = scores1[2::3]
 
 with open('scores.csv', 'a') as f:
     f1 = csv.writer(f)
